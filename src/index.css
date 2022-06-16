@@ -86,7 +86,8 @@ body {
 	position: relative;
 }
 .btn-animated {
-	animation: move_in_up 1s ease-out;
+	animation: move_in_up 0.5s ease-out 0.75s;
+	animation-fill-mode: backwards;
 }
 .btn:hover {
 	transform: translateY(-3px);
