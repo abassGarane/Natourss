@@ -6,20 +6,24 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+html{
+  font-size: 62.5%;
+}
 
-* {
+*,*::after,*::before {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	/* font-size: 16px; */
 	line-height: 1.7;
 	color: #777;
-	padding: 30px;
+	padding: 3rem;
+	box-sizing: border-box;
 }
 
 .header {
@@ -38,13 +42,13 @@ body {
 
 .logo-box {
 	position: absolute;
-	top: 40px;
-	left: 40px;
+	top: 4rem;
+	left: 4rem;
 }
 
 .logo {
-	height: 35px;
-}
+	height: 3.5rem;
+ }
 /* .logo:hover {
 	animation: move_in_right 1s ease-out;
 } */
@@ -60,20 +64,20 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	backface-visibility: hidden;
-	margin-bottom: 60px;
+	margin-bottom: 6rem;
 }
 .heading-primary_main {
 	display: block;
 	font-weight: 400;
-	font-size: 60px;
-	letter-spacing: 35px;
+	font-size: 6rem;
+	letter-spacing: 3.5rem;
 	animation: move_in_left 1s ease-out;
 }
 .heading-primary_sub {
 	display: block;
 	font-weight: 700;
-	font-size: 20px;
-	letter-spacing: 17.4px;
+	font-size: 2rem;
+	letter-spacing: 1.74rem;
 	animation: move_in_right 1s ease-out;
 }
 .btn:link,
@@ -81,9 +85,10 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	display: inline-block;
-	border-radius: 100px;
+	border-radius: 10rem;
 	transition: all 0.5s;
 	position: relative;
+  font-size: 1.6rem;
 }
 .btn-animated {
 	animation: move_in_up 0.5s ease-out 0.75s;
@@ -92,18 +97,18 @@ body {
 .btn:hover {
 	transform: translateY(-3px);
 	/* transition: all 1s ease-out; */
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn:active {
 	transform: translateY(-1px);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .btn::after {
 	content: '';
 	display: inline-block;
 	height: 100%;
 	width: 100%;
-	border-radius: 100px;
+	border-radius: 10rem;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -119,7 +124,7 @@ body {
 .btn-white {
 	background-color: #fff;
 	color: #777;
-	padding: 15px 40px;
+	padding: 1.5rem 4rem;
 }
 .btn-white::after {
 	background-color: #fff;
@@ -128,11 +133,11 @@ body {
 @keyframes move_in_left {
 	0% {
 		opacity: 0;
-		transform: translateX(-100px);
+		transform: translateX(-10rem);
 	}
 	80% {
 		opacity: 0.8;
-		transform: translateX(10px);
+		transform: translateX(1rem);
 	}
 	100% {
 		opacity: 1;
@@ -143,11 +148,11 @@ body {
 @keyframes move_in_right {
 	0% {
 		opacity: 0;
-		transform: translateX(50px);
+		transform: translateX(5rem);
 	}
 	80% {
 		opacity: 0.8;
-		transform: translateX(-10px);
+		transform: translateX(-1rem);
 	}
 	100% {
 		opacity: 1;
@@ -157,7 +162,7 @@ body {
 @keyframes move_in_up {
 	0% {
 		opacity: 0;
-		transform: translateY(30px);
+		transform: translateY(3rem);
 	}
 
 	100% {
