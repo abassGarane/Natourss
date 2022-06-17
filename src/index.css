@@ -6,14 +6,16 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-html{
-  font-size: 62.5%;
+html {
+	font-size: 62.5%;
 }
 
-*,*::after,*::before {
+*,
+*::after,
+*::before {
 	margin: 0;
 	padding: 0;
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
@@ -48,7 +50,7 @@ body {
 
 .logo {
 	height: 3.5rem;
- }
+}
 /* .logo:hover {
 	animation: move_in_right 1s ease-out;
 } */
@@ -88,7 +90,7 @@ body {
 	border-radius: 10rem;
 	transition: all 0.5s;
 	position: relative;
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 .btn-animated {
 	animation: move_in_up 0.5s ease-out 0.75s;
