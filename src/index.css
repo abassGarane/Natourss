@@ -42,19 +42,19 @@ body {
 	position: relative;
 }
 
-.logo-box {
+.header__logo-box {
 	position: absolute;
 	top: 4rem;
 	left: 4rem;
 }
 
-.logo {
+.header__logo {
 	height: 3.5rem;
 }
 /* .logo:hover {
 	animation: move_in_right 1s ease-out;
 } */
-.text-box {
+.header__text-box {
 	position: absolute;
 	top: 40%;
 	left: 50%;
@@ -68,14 +68,14 @@ body {
 	backface-visibility: hidden;
 	margin-bottom: 6rem;
 }
-.heading-primary_main {
+.heading-primary--main {
 	display: block;
 	font-weight: 400;
 	font-size: 6rem;
 	letter-spacing: 3.5rem;
 	animation: move_in_left 1s ease-out;
 }
-.heading-primary_sub {
+.heading-primary--sub {
 	display: block;
 	font-weight: 700;
 	font-size: 2rem;
@@ -92,7 +92,7 @@ body {
 	position: relative;
 	font-size: 1.6rem;
 }
-.btn-animated {
+.btn--animated {
 	animation: move_in_up 0.5s ease-out 0.75s;
 	animation-fill-mode: backwards;
 }
@@ -123,12 +123,12 @@ body {
 	opacity: 0;
 }
 
-.btn-white {
+.btn--white {
 	background-color: #fff;
 	color: #777;
 	padding: 1.5rem 4rem;
 }
-.btn-white::after {
+.btn--white::after {
 	background-color: #fff;
 }
 

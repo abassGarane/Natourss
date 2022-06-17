@@ -6,15 +6,15 @@
 
 <template>
 	<div class="header">
-		<div class="logo-box">
-			<img src="../assets/img/logo-white.png" alt="logo" class="logo" />
+		<div class="header__logo-box">
+			<img src="../assets/img/logo-white.png" alt="logo" class="header__logo" />
 		</div>
-		<div class="text-box">
+		<div class="header__text-box">
 			<h1 class="heading-primary">
-				<span class="heading-primary_main">Outdoors</span>
-				<span class="heading-primary_sub">Is where life happens</span>
+				<span class="heading-primary--main">Outdoors</span>
+				<span class="heading-primary--sub">Is where life happens</span>
 			</h1>
-			<a href="#" class="btn btn-white btn-animated">Discover Our Tours</a>
+			<a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
 		</div>
 	</div>
 </template>
