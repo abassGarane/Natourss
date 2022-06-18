@@ -9,6 +9,7 @@ Dark green: #28b485
 // @function default_font($a, $b) {
 // 	@return ($a/$b)*100%;
 // }
+@use './constants';
 html {
 	font-size: 62.5%;
 }
@@ -26,7 +27,7 @@ body {
 	font-weight: 400;
 	/* font-size: 16px; */
 	line-height: 1.7;
-	color: #777;
+	color: constants.$light-gray;
 	padding: 3rem;
 	box-sizing: border-box;
 }
