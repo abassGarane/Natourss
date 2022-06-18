@@ -1,0 +1,57 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+.btn {
+	&:link,
+	&:visited {
+		text-decoration: none;
+		display: inline-block;
+		border-radius: 10rem;
+		transition: all 0.5s;
+		position: relative;
+		font-size: 1.6rem;
+		@include mixins.uppercase;
+	}
+
+	&--animated {
+		animation: move_in_up 0.5s ease-out 0.75s;
+		animation-fill-mode: backwards;
+	}
+	&:hover {
+		transform: translateY(-3px);
+		/* transition: all 1s ease-out; */
+		box-shadow: 0 1rem 2rem rgba(variables.$color-black, 0.2);
+
+		&::after {
+			transform: scaleX(1.4) scaleY(1.3);
+			opacity: 0;
+		}
+	}
+
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 0.5rem 1rem rgba(variables.$color-black, 0.2);
+	}
+	&::after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 10rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.4s;
+	}
+	&--white {
+		background-color: variables.$color-white;
+		color: variables.$light-gray;
+		padding: 1.5rem 4rem;
+
+		&::after {
+			// background-color: darken($color: #fff, $amount: 20%);
+
+			background-color: variables.$color-white;
+		}
+	}
+}

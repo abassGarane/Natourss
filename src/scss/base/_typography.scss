@@ -1,0 +1,22 @@
+@use '../abstracts/mixins';
+.heading-primary {
+	color: #fff;
+	backface-visibility: hidden;
+	margin-bottom: 6rem;
+	@include mixins.uppercase;
+
+	&--main {
+		display: block;
+		font-weight: 400;
+		font-size: 6rem;
+		letter-spacing: 3.5rem;
+		animation: move_in_left 1s ease-out;
+	}
+	&--sub {
+		display: block;
+		font-weight: 700;
+		font-size: 2rem;
+		letter-spacing: 1.74rem;
+		animation: move_in_right 1s ease-out;
+	}
+}

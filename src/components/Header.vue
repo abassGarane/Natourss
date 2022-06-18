@@ -20,5 +20,5 @@
 </template>
 
 <style lang="scss" scoped>
-	@use '../scss/components/header';
+	@use '../scss/layouts/header';
 </style>

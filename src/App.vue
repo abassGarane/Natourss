@@ -14,5 +14,5 @@
 <style lang="scss">
 	// @use ('./scss/main.scss');
 	// @import './scss/main.scss';
-	@use './scss/main.scss';
+	@use './scss/pages/home';
 </style>
