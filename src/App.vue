@@ -11,7 +11,7 @@
 	<Header />
 </template>
 
-<style>
+<style lang="scss">
 	/*
 COLORS:
 
