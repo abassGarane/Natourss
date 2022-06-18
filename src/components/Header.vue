@@ -23,6 +23,12 @@
 	@mixin uppercase {
 		text-transform: uppercase;
 	}
+
+	@mixin centerize($top, $left) {
+		position: absolute;
+		top: $top;
+		left: $left;
+	}
 	.header {
 		height: 95vh;
 		background-image: linear-gradient(
