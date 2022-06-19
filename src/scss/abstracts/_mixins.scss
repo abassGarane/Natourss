@@ -1,3 +1,11 @@
 @mixin uppercase {
 	text-transform: uppercase;
 }
+
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}

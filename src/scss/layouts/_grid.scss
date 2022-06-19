@@ -1,0 +1,41 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins';
+
+.row {
+	max-width: v.$grid-width;
+	background-color: lighten(v.$color-primary-dark, 10);
+	margin: 0px auto;
+
+	[class^='col-1-'] {
+		float: left;
+		&:not(:last-child) {
+			margin-right: v.$gutter-horizontal;
+		}
+	}
+
+	&:not(:last-child) {
+		margin-bottom: v.$gutter-vertical;
+	}
+	@include mixins.clearfix;
+	.col-1-2 {
+		width: calc((100% - #{v.$gutter-horizontal}) / 2);
+		background-color: lighten(v.$color-primary-dark, 30);
+	}
+	.col-1-3 {
+		width: calc((100% - (2 *#{v.$gutter-horizontal})) / 3);
+		background-color: lighten($color: v.$color-primary-dark, $amount: 45);
+	}
+	.col-1-3-2 {
+		width: calc((100% - #{v.$gutter-horizontal}) / 3);
+		background-color: lighten($color: v.$color-primary-dark, $amount: 45);
+	}
+
+	.col-2-3 {
+		width: calc(((100% - #{v.$gutter-horizontal}) / 3) * 2);
+		background-color: lighten($color: v.$color-primary-dark, $amount: 45);
+		float: right;
+		&:not(:last-child) {
+			margin-right: v.$gutter-horizontal;
+		}
+	}
+}
