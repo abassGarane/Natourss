@@ -40,3 +40,10 @@ sass/
 |
  – main.scss              # Main Sass input file
 ```
+
+## Responsive design
+
+- [ ] Fluid layouts
+- [ ] Responsive units
+- [ ] Flexible images
+- [ ] Media queries

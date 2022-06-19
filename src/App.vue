@@ -1,18 +1,9 @@
-<script>
-	import Header from './components/Header.vue';
-	export default {
-		components: {
-			Header,
-		},
-	};
-</script>
+<script></script>
 
 <template>
-	<Header />
+	<router-view></router-view>
 </template>
 
 <style lang="scss">
-	// @use ('./scss/main.scss');
-	// @import './scss/main.scss';
-	@use './scss/pages/home';
+	@use './scss/base/base';
 </style>
