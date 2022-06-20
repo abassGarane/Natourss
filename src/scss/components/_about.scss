@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as v;
+@use '../base/typography';
+@use '../base/utilities';
+@use '../components/button';
+.about {
+	background-color: v.$color-gray-light;
+	padding: 25rem 0;
+	margin-top: -20vh;
+}
