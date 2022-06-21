@@ -32,19 +32,19 @@
 			<div class="col-1-2">
 				<div class="composition">
 					<img
-						src=".././assets/img/nat-1.jpg"
-						alt=""
-						class="composition__photo"
+						src=".././assets/img/nat-1-large.jpg"
+						alt="Natures photo"
+						class="composition__photo composition__photo--p1"
 					/>
 					<img
-						src=".././assets/img/nat-2.jpg"
-						alt=""
-						class="composition__photo"
+						src=".././assets/img/nat-2-large.jpg"
+						alt="Natures photo"
+						class="composition__photo composition__photo--p2"
 					/>
 					<img
-						src=".././assets/img/nat-3.jpg"
-						alt=""
-						class="composition__photo"
+						src=".././assets/img/nat-3-large.jpg"
+						alt="Natures photo"
+						class="composition__photo composition__photo--p3"
 					/>
 				</div>
 			</div>
